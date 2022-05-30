@@ -1,0 +1,282 @@
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family:'Arvo', serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+}
+
+
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 3.4rem;
+}
+h3{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2.6rem;
+}
+
+
+.seccion{
+    margin: top 2rem;
+    margin-bottom: 2rem;
+}
+.FW-300{
+    font-weight: 300;
+}
+.centrar-texto{
+    text-align: center;
+}
+.display-block{
+    display: block;
+}
+
+.boton{
+    color: blanchedalmond;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    display: block;
+    margin-top: 3rem;
+    text-align: center;
+}
+.color-boton{
+    background-color: darkorange;
+}
+.boton-todas{
+    color: blanchedalmond;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    /*display: inline-block;*/
+    text-align: center;
+}
+.todas-right{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 3rem;
+}
+.boton-verde{
+    background-color: darkgreen;
+}
+
+.site-header.inicio{
+    background-image:url(../img/header.jpg);
+    background-position:center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 60rem;
+}
+.content-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.content-container h1{
+    color: white;
+    padding-bottom: 2rem;
+    max-width: 60rem;
+    line-height: 2;
+}
+
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+}
+.navegacion a{
+    color:white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    margin-right: 2rem;
+}
+.navegacion a:hover{
+    color:crimson;
+    text-decoration: underline;
+}
+.navegacion a:last-of-type{
+    margin: 0;
+}
+/*.title-seccion1{
+    font-weight: 300;
+    text-align: center;
+}*/
+.seccion1{
+    display: flex;
+    justify-content: space-between;
+}
+.iconos{
+    flex-basis: calc(33.3% - 1rem) ;
+    text-align: center;
+}
+.iconos h3{
+    text-transform: uppercase;
+}
+
+/*.main-container{
+
+}*/
+.container-anuncios{
+    display: flex;
+    justify-content: space-between;
+}
+.anuncio{
+    flex-basis: calc(33.3% - 1rem);
+    border: 1px solid hotpink;
+    background-color:rgb(29, 25, 25);
+}
+.contenido{
+    padding: 2rem;
+}
+.contenido h3, .contenido p{
+    margin: 0;
+}
+.precio{
+    color: darkgoldenrod;
+    font-weight: 700;
+}
+.iconos-casa{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.iconos-casa li{
+    /*flex: 1;*/
+    display: flex;
+}
+.iconos-casa li img{
+    margin-right: 2rem;
+}
+
+
+.seccion3{
+    background-image: url(../img/encuentra.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+}
+.contenido-seccion3{
+    flex: 1;
+    color: aliceblue;
+}
+.contenido-seccion3 p{
+    font-size: 1.8rem;
+}
+.boton-seccion3{
+    color: blanchedalmond;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    display:inline-block;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.contenedor-seccion{
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor-seccion .last-seccion{
+    flex-basis: 60%;
+}
+.contenedor-seccion .testimoniales{
+    flex-basis: calc(40% - 2rem);
+}
+
+.contenido-blog{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.contenido-blog:last-of-type{
+    margin-bottom: 0;
+}
+.contenido-blog .img-blog{
+    flex-basis: 40%;
+}
+.contenido-blog .texto-blog{
+    flex-basis:calc(60% - 3rem);
+}
+.texto-blog a{
+    color: white;
+    text-decoration: none;
+}
+.texto-blog h4{
+    margin: 0;
+    line-height: 1.2;
+}
+.texto-blog h4::after{
+    content:"";
+    display: block;
+    width: 15rem;
+    height: 0.5rem;
+    background-color: cornflowerblue;
+    margin-top: 1rem;
+}
+.texto-blog span{
+    color: chocolate;
+}
+
+.testimonio{
+    background-color: green;
+    font-size: 2.4rem;
+    padding: 2rem;
+    color: antiquewhite;
+    border-radius: 1rem;
+}
+.testimonio p{
+    text-align: right;
+}
+.testimonio blockquote::before{
+    content:"";
+    background-image: url(../img/comilla.svg);
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: -2rem;
+}
+.testimonio blockquote{
+    position: relative;
+    padding-left: 5rem;
+    font-weight: 300;
+}
+
+.footer{
+    background-color: brown;
+    margin: 0;
+}
+.footer p{
+    margin: 0;   
+}
+.contenido-footer{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
