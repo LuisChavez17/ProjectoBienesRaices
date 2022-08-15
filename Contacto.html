@@ -1,12 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo&family=Bebas+Neue&family=Lato:wght@100;300;700;900&family=Pacifico&family=Roboto:wght@100&family=Yanone+Kaffeesatz:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/Normalice.CSS">
+    <link rel="stylesheet" href="CSS/Styles.CSS">
+    <title>Contacto</title>
 </head>
+
 <body>
-    <h1>Contacto</h1>
-     <a href="Index.html">Volver</a>
+    <header class="site-header">
+        <div class="container content-container">
+            <div class="barra">
+                <a href="/">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <div class="mobile-menu">
+                    <a href="#navegacion">
+                        <img src="img/barras.svg" alt="barras">
+                    </a>
+                </div>
+
+                <nav id="navegacion" class="navegacion">
+                    <a href="Nosotros.html">Nosotros</a>
+                    <a href="Anuncios.html">Anuncios</a>
+                    <a href="Blog.html">Blog</a>
+                    <a href="Contacto.html">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <h1 class="FW-300 centrar-texto">Contacto</h1>
+    <img src="img/destacada3.jpg" alt="img-principal">
+
+    <main class="seccion container contenido-centrado">
+        <h2 class="FW-300 centrar-texto">Llena el formulario de contacto</h2>
+
+        <form action="">
+            <fieldset>
+                <legend>Informacion Personal</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Ingrese su Nombre" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="Ingrese un Correo Electronico" required>
+
+                <label for="telefono">Telefono:</label>
+                <input type="tel" id="telefono" placeholder="Ingrese un numero de telefono" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje">Escribe un texto</textarea>
+                <!-- <input name="" id="mensaje" cols="30" rows="10" placeholder="Ingrese texto"> -->
+            </fieldset>
+
+            <fieldset>
+                <legend>Informacion sobre la propiedad</legend>
+                <label for="opciones">Vende o Compra</label>
+                <select name="" id="opciones">
+                    <option value="" disabled selected>--Seleccione--</option>
+                    <option value="Compra">Compra</option>
+                    <option value="Vende">Vende</option>
+                </select>
+
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" min="0" max="10" step="2">
+            </fieldset>
+
+            <fieldset>
+                <legend>Contacto</legend>
+
+                <p>Como desea ser contactado</p>
+                <div class="forma-contacto">
+                    <label for="telefono">Telefono</label>
+                    <input type="radio" name="contacto" value="telefono" id="telefono">
+
+                    <label for="correo">E-mail</label>
+                    <input type="radio" name="contacto" value="correo" id="correo">
+                </div>
+                <!-- <p>Elija del meun</p> ESTE CODOGO TE PREMITE SELECCIONAR VARIAS OPCIENES A ALA VEZ
+                <input type="checkbox" name="orden" value="hamburguesa">Hamburguesa
+                <input type="checkbox" name="orden" value="papas">Papas
+                <input type="checkbox" name="orden" value="cervesa">Cervesa -->
+
+                <P>Si eligio telefono elija la fecha y hora</P>
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha">
+
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" min="9:00" max="18:00">
+
+                <!-- <input type="password">
+                <input type="search">
+                <input type="url"> -->
+            </fieldset>
+            <input type="submit" value="Enviar" class="boton color-boton">
+        </form>
+    </main>
+
+
+    <footer class="footer seccion">
+        <div class="container contenido-footer">
+            <nav class="navegacion">
+                <a href="Nosotros.html">Nosotros</a>
+                <a href="Anuncios.html">Anuncios</a>
+                <a href="Blog.html">Blog</a>
+                <a href="Contacto.html">Contacto</a>
+            </nav>
+            <p>rneonovjrnv jcifebvieb jbrehivbre bvheibv &commat; &copy;</p>
+        </div>
+    </footer>
 </body>
+
 </html>
